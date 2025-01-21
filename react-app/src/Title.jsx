@@ -1,5 +1,10 @@
 function Title(){
-    return <h1>I am the title</h1>
+    return (
+        <>
+            <p>2*2 = {2*2}</p>
+        </>
+    )
 }
 
 //export public
+export default Title
