@@ -4,6 +4,8 @@ export default function LikeButton(){
     let [isLiked , setLiked] = useState(false);
     let [count , setCount] = useState(0)
 
+    let likeStyle = {color : "red"}
+
 
     function toggle(){
         setLiked(!isLiked)
@@ -14,7 +16,7 @@ export default function LikeButton(){
         <div>
             <p onClick={toggle}>
                 {count},
-                {isLiked ? <i class="fa-solid fa-heart"></i> : <i class="fa-regular fa-heart"></i> }
+                {isLiked ? <i className="fa-solid fa-heart" style={likeStyle}></i> : <i class="fa-regular fa-heart"></i> }
             </p>
         </div>
     )
