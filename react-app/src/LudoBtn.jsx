@@ -1,10 +1,14 @@
 import {useState} from "react" ; 
 export default function LudoBtn(){
     let [moves,setMoves] = useState({blue : 0,red : 0,green : 0,yellow : 0})
+    let [arr,setArr] = useState(["no moves"])
 
     function updateBlue(){
         console.log(`move played ${moves.blue}`) 
         setMoves({...moves,blue : moves.blue +1})
+
+        setArr([...arr, "blue moves"])
+        console.log(arr)
     }
     
     return (
