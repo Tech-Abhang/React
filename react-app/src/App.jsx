@@ -14,7 +14,7 @@ import ProductTab from "./ProductTab.jsx"
 function App() {
   return (
     <>
-      <Ticket ticket={[0,1,2]}/>
+      <Form />
     </>  
   )
 }
